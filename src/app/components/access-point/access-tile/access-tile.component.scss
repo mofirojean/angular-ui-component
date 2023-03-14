@@ -1,0 +1,29 @@
+.access-container {
+    width: 200px;
+    cursor: pointer;
+    border-color: #63acf0;
+    transition: all ease-in-out;
+    background-color: #fff;
+
+
+    &:hover {
+        transform: scale(1.01);
+    }
+}
+
+.title {
+    font-size: 11px;
+    color: #6c6f72;
+}
+
+.access-icon {
+    background-color: #dde8eb;
+    height: 70px;
+    width: 70px;
+    border-radius: 50%; 
+}
+
+i {
+    color: #63acf0;
+}
+

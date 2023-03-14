@@ -1,1 +1,15 @@
-<p>access-point works!</p>
+<div class="container-fluid w-100 full-screen-height background">
+    <div class="row h-100 p-5">
+        <div class="col h-100 d-flex flex-column">
+            <div class="upper-data h-25 text-center poppins">
+                <h1>Choose a UI Component</h1>
+                <p>Select the UI component you will like to see</p>
+            </div>
+            <div class="lower-data h-75 d-flex justify-content-center">
+                <a [routerLink]="[accessData.path]" *ngFor="let accessData of accessDatas" class="text-decoration-none text-dark">
+                    <app-access-tile [accessData]="accessData" ></app-access-tile>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>

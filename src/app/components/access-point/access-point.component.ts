@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { AccessType } from 'src/app/model/access.model';
+import { AccessService } from 'src/app/service/access.service';
 
 @Component({
   selector: 'app-access-point',
@@ -6,10 +8,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./access-point.component.scss']
 })
 export class AccessPointComponent implements OnInit {
+  accessDatas!: AccessType[];
 
-  constructor() { }
+  constructor(private accessService: AccessService) { }
 
   ngOnInit(): void {
+    this.accessDatas = this.accessService.getAllAccessComponent()
   }
 
 }
