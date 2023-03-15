@@ -7,6 +7,8 @@ import { AccessPointComponent } from './components/access-point/access-point.com
 import { ElementsComponent } from './components/elements/elements.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { AccessTileComponent } from './components/access-point/access-tile/access-tile.component';
+import { SharedModule } from './module/shared/shared.module';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 
 @NgModule({
@@ -20,7 +22,9 @@ import { AccessTileComponent } from './components/access-point/access-tile/acces
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgbModule
+    NgbModule,
+    SharedModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

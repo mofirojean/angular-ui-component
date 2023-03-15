@@ -2,16 +2,16 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { UiDashboardRoutingModule } from './ui-dashboard-routing.module';
-import { UiDashboardComponent } from './ui-dashboard.component';
+import { SharedModule } from '../shared/shared.module';
 
 
 @NgModule({
   declarations: [
-    UiDashboardComponent
   ],
   imports: [
     CommonModule,
-    UiDashboardRoutingModule
+    UiDashboardRoutingModule,
+    SharedModule
   ]
 })
 export class UiDashboardModule { }
