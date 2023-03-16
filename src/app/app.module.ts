@@ -9,7 +9,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { AccessTileComponent } from './components/access-point/access-tile/access-tile.component';
 import { SharedModule } from './module/shared/shared.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-
+import { UiDashboardModule } from './module/ui-dashboard/ui-dashboard.module';
 
 @NgModule({
   declarations: [
@@ -17,14 +17,14 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     AccessPointComponent,
     ElementsComponent,
     AccessTileComponent,
-
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     NgbModule,
     SharedModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    UiDashboardModule
   ],
   providers: [],
   bootstrap: [AppComponent]

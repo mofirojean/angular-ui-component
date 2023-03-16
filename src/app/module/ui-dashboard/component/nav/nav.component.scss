@@ -1,0 +1,37 @@
+.sidenav-container {
+  height: 100%;
+}
+
+.sidenav {
+  width: 200px;
+}
+
+.sidenav .mat-toolbar {
+  background: inherit;
+}
+
+.mat-toolbar.mat-primary {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.selected {
+  color: #fff;
+  background-color: #7e00b9;
+
+  &:focus {
+    color: #fff;
+     background-color: #7e00b9;
+  }
+
+  &:active {
+    color: #fff;
+    background-color: #7e00b9;
+  }
+
+  &:hover {
+    color: #fff;
+    background-color: #7e00b9;
+  }
+}

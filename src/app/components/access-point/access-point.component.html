@@ -5,7 +5,7 @@
                 <h1>Choose a UI Component</h1>
                 <p>Select the UI component you will like to see</p>
             </div>
-            <div class="lower-data h-75 d-flex justify-content-center">
+            <div class="lower-data h-75 d-flex justify-content-center gap-2">
                 <a [routerLink]="[accessData.path]" *ngFor="let accessData of accessDatas" class="text-decoration-none text-dark">
                     <app-access-tile [accessData]="accessData" ></app-access-tile>
                 </a>

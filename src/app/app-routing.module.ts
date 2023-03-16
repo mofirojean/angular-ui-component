@@ -5,9 +5,14 @@ import { AccessPointComponent } from './components/access-point/access-point.com
 const routes: Routes = [
   {path: '', component: AccessPointComponent },
 
-  { path: 'ui-dashboard', 
-  loadChildren: () => import('./module/ui-dashboard/ui-dashboard.module').then(m => m.UiDashboardModule)
- }
+  { 
+    path: 'ui-dashboard', 
+    loadChildren: () => import('./module/ui-dashboard/ui-dashboard.module').then(m => m.UiDashboardModule)
+ },
+  { 
+    path: 'material', 
+    loadChildren: () => import('./module/angular-material/angular-material.module').then(m => m.AngularMaterialModule) 
+  }
 ];
 
 @NgModule({
